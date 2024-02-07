@@ -4,6 +4,7 @@ if __name__ == "__main__":
     app = SocialNetworkApp()
 
 
+
     while True:
         print("\nМеню:")
         print("1. Вхід за логіном і паролем")
