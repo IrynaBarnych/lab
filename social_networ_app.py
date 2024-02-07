@@ -146,6 +146,7 @@ class SocialNetworkApp:
                 user_data['posts'] = []
             user_data['posts'].append(post)
             # Зберігання оновлених даних користувача
+
             self.redis.hset('users', username, json.dumps(user_data))
             print(f"Нова публікація додана для {username}.")
             return True
